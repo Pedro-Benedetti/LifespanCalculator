@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Calculator</title>
+
+    <link rel="stylesheet" href="lifestyle.css">
+
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="card-header">
+            <h1 class="card-title">Life Calculator</h1>
+            <p class="card-description">Calculate how much time you have left based on a 90-year lifespan</p>
+        </div>
+        
+        <div class="card-content">
+            <form id="life-calculator-form">
+                <div class="form-group">
+                    <label for="age">Your Age</label>
+                    <input type="number" id="age" placeholder="Enter your age" min="0" max="89">
+                    <p class="error" id="error-message"></p>
+                </div>
+                <button type="submit">Calculate</button>
+            </form>
+        </div>
+        
+        <div class="card-footer" id="results-section">
+            <h3 class="results-title">You have:</h3>
+            <div class="results-grid">
+                <div class="result-box">
+                    <div class="result-value" id="days-result">0</div>
+                    <div class="result-label">days</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-value" id="weeks-result">0</div>
+                    <div class="result-label">weeks</div>
+                </div>
+                <div class="result-box">
+                    <div class="result-value" id="months-result">0</div>
+                    <div class="result-label">months</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lifecalculator.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 24px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.card-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.card-description {
+    color: #666;
+    font-size: 14px;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.error {
+    color: #e53935;
+    font-size: 14px;
+    margin-top: 8px;
+    display: none;
+}
+
+button {
+    background-color: #4a6da7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #3a5a8f;
+}
+
+.card-footer {
+    padding: 24px;
+    border-top: 1px solid #eee;
+    display: none;
+}
+
+.results-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+@media (max-width: 600px) {
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.result-box {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.result-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4a6da7;
+    margin: 8px 0;
+}
+
+.result-label {
+    font-size: 14px;
+    color: #666;
+}
